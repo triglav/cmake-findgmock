@@ -118,6 +118,7 @@ else()
   _gmock_find_library(GMOCK_MAIN_LIBRARY_DEBUG gmock_maind)
 endif()
 
+include(FindPackageHandleStandardArgs)
 FIND_PACKAGE_HANDLE_STANDARD_ARGS(GMock DEFAULT_MSG GMOCK_LIBRARY GMOCK_INCLUDE_DIR GMOCK_MAIN_LIBRARY)
 
 if(GMOCK_FOUND)
